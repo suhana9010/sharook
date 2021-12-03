@@ -30,4 +30,13 @@ scanf("%d",&n);
     printf("positive");
  else
     printf("negitive");
-  return 0;
+ 
+A Character Is an Alphabet or Not
+
+char ch;
+scanf("%c",&ch);
+if(ch>='a' && ch<='z' || ch>='A' && ch<='Z')
+    printf("alphabet");
+else
+    printf("not alphabet");
+   
