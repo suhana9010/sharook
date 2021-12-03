@@ -8,8 +8,8 @@ int main()
     printf("ascii code= %d",c);
     return 0;
 } 
-A-Z Ascii codes- 65-90
-a-z Ascii codes  97 -122
+A-Z Ascii codes 65-91
+a-z Ascii codes 97-122
 
 The Greatest Number Among the Given Three Number
 
