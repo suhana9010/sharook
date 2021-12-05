@@ -31,7 +31,7 @@ scanf("%d",&n);
  else
     printf("negitive");
  
-A Character Is an Alphabet or Not
+/*A Character Is an Alphabet or Not*/
 
 char ch;
 scanf("%c",&ch);
@@ -50,5 +50,46 @@ int main(){
     printf("%d is leap year",year);
     else printf("not a leap year");
     return 0;
+}
+
+The Date Is Correct or Not
+
+#include <stdio.h>
+int main(){
+  int d,m,y;
+  scanf("%d %d %d\n",&d,&m,&y);
+  if(1800<=y && y<=9999){
+     if(1<=m && m<=12){
+         if(m==1||m==3||m==5||m==7||m==8||m==10||m==12){
+            if(1<=d && d<=31){
+             printf("VALID");
+            }
+            else printf("NOT VALID");  
+         }
+         if(m==4||m==6||m==9||m==11){
+             if(1<=d && d<=30){
+                 printf("VALID");
+             }
+             else printf("NOT VALID");   
+         }
+         if(m==2){
+             if((y%400==0)||(y%4==0&&y%100!=0)){
+                 if(1<=d && d<=29){
+                     printf("VALID");
+                 }
+                 else printf("NOT VALID");
+             }
+             else{
+                 if(1<=d && d<=28){
+                     printf("VALID");
+                 }
+                 else printf("NOT VALID");
+             }  
+         }
+     }
+     else printf("NOT VALID");    
+  }
+  else printf("NOT VALID");
+  return 0;
 }
 
