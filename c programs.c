@@ -1,4 +1,4 @@
-Print Ascii Value of the Character
+Print Ascii Value of the Character?
 
 #include <stdio.h>
 int main()
@@ -11,7 +11,7 @@ int main()
 A-Z Ascii codes 65-91
 a-z Ascii codes 97-122
 
-The Greatest Number Among the Given Three Number
+The Greatest Number Among the Given Three Number?
 
 int num1,num2,num3;
 scanf("%d %d %d",&num1,&num2,&num3);
@@ -22,7 +22,7 @@ else if(num2>num1 && num2>num3)
 else
     printf("greater number = %d",num3);
     
-The Number Is Positive or Negative
+The Number Is Positive or Negative?
 
 int n;
 scanf("%d",&n);
@@ -31,7 +31,7 @@ scanf("%d",&n);
  else
     printf("negitive");
  
-/*A Character Is an Alphabet or Not*/
+A Character Is an Alphabet or Not?
 
 char ch;
 scanf("%c",&ch);
@@ -40,7 +40,7 @@ if(ch>='a' && ch<='z' || ch>='A' && ch<='Z')
 else
     printf("not alphabet");
 
-Check whether a year is a leap year or not.
+Check whether a year is a leap year or not?
 
 #include <stdio.h>
 int main(){
@@ -52,7 +52,7 @@ int main(){
     return 0;
 }
 
-The Date Is Correct or Not
+The Date Is Correct or Not?
 
 #include <stdio.h>
 int main(){
