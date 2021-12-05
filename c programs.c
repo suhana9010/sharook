@@ -39,4 +39,16 @@ if(ch>='a' && ch<='z' || ch>='A' && ch<='Z')
     printf("alphabet");
 else
     printf("not alphabet");
-   
+
+Check whether a year is a leap year or not.
+
+#include <stdio.h>
+int main(){
+    int year;
+    scanf("%d",&year);
+    if((year%400==0) ||(year%4==0 && year%100!=100))
+    printf("%d is leap year",year);
+    else printf("not a leap year");
+    return 0;
+}
+
