@@ -95,22 +95,40 @@ int main(){
 
 Reverse a number
 
+int rev=0,n,rem;
+printf("enter a number:");
+scanf("%d",&n);
+while(n!=0){
+       rem=n%10;
+       rev=rev*10+rem;
+       n/=10;       
+}
+printf("rev no :%d",rev);
+
+Armstrong number or Not?
+
 #include <stdio.h>
+#include <math.h>
 
 int main()
 {  
-   int rev=0,n,rem;
-   printf("enter a number:");
-   scanf("%d",&n);
-   while(n!=0){
-       rem=n%10;
-       rev=rev*10+rem;
-       n/=10;
+   int count=0,rem,num,sum=0;
+   scanf("%d",&num);
+   int i=num,j=num;
+   while(i!=0){
+       i=i/10;
        
+       count=count+1;
    }
-     printf("rev no :%d",rev);
+   while(num!=0){
+       rem=num%10;
+       sum=sum+pow(rem,count);
+       num=num/10;
+   }
+   if(sum==j){
+       printf("Armstrong number");
+   }
+   else printf("Not a Armstrong number");
 
     return 0;
 }
-
-
