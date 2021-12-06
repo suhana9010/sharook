@@ -109,9 +109,7 @@ Armstrong number or Not?
 
 #include <stdio.h>
 #include <math.h>
-
-int main()
-{  
+int main(){  
    int count=0,rem,num,sum=0;
    scanf("%d",&num);
    int i=num,j=num;
@@ -125,10 +123,20 @@ int main()
        sum=sum+pow(rem,count);
        num=num/10;
    }
-   if(sum==j){
+   if(sum==j)
        printf("Armstrong number");
-   }
    else printf("Not a Armstrong number");
-
     return 0;
+}
+
+Display Fibonacci Series
+
+int n1=0,n2=1,n3,num;
+scanf("%d",&num);
+printf("%d %d",n1,n2);
+for(int i=3;i<num;i++){
+    n3=n1+n2;
+    printf(" %d",n3);
+    n1=n2;
+    n2=n3;
 }
