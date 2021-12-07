@@ -163,4 +163,19 @@ if(max%a==0 && max%b==0){
 else if(max%a!=0 || max%b!=0){
     printf("%d",a*b);
 }
+
+Palindrome or Not?
+    
+int org,rev=0,rem,n;
+scanf("%d",&org);
+n=org;
+while(org!=0){
+       rem=org%10;
+       rev=rev*10+rem;
+       org=org/10;
+}
+if(n==rev)
+   printf("palidrom");
+else printf("Not palidrom");
+       
     
