@@ -177,5 +177,21 @@ while(org!=0){
 if(n==rev)
    printf("palidrom");
 else printf("Not palidrom");
-       
+
+Find A Generic Root Of Number?
+    
+int num,n,a,rem,count=0;
+scanf("%d",&num);
+n=num;
+while(n!=0){
+        rem=n%10;
+        count=count+rem;
+        n=n/10;
+}
+int final=0;
+while(count!=0){
+    rem=count%10;
+    final=final+rem;
+    count=count/10;
+} printf("%d",final);
     
