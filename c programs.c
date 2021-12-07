@@ -194,4 +194,23 @@ while(count!=0){
     final=final+rem;
     count=count/10;
 } printf("%d",final);
+
+Number Is Divisible By 11 Using (VEDIC MATH)
+
+int count=0,rem,num,n,even=0,odd=0;
+scanf("%d",&num);
+n=num;
+while(n!=0){
+       rem=n%10;
+       count=count+rem;
+       n=n/10;
+}
+for(int i=n;i>=1;i--){
+        if(i%2==0){
+           even=even+i%10;
+        }
+       else odd=odd+i%10;      
+}
+if(even==odd) printf("it is divisible by 11");
+else printf("it is not");
     
