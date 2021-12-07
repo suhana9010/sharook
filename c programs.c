@@ -140,3 +140,27 @@ for(int i=3;i<num;i++){
     n1=n2;
     n2=n3;
 }
+
+LCM of two numbers
+
+int a,b,max;
+scanf("%d %d",&a,&b);
+max=b>a? b:a;
+while(1){
+       if(max%a==0 && max%b==0){
+       printf("%d",max);
+       break;
+       }
+       max++;
+}    
+    OR
+int a,b,max;
+scanf("%d %d",&a,&b);
+max=(b>a)?b:a;
+if(max%a==0 && max%b==0){
+    printf("%d",max);
+ }
+else if(max%a!=0 || max%b!=0){
+    printf("%d",a*b);
+}
+    
