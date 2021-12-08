@@ -218,8 +218,16 @@ Multiplication Table
 
 int n;
 scanf("%d",&n);
-for(int i=0;i<999999;i++){
+for(int i=0;i<=10;i++){
     printf("%d*%d=%d\n",n,i,n*i);
 }
 
+Find GCD of two Numbers Using
+
+int a,b,GCD;
+scanf("%d %d",&a,&b);
+for(int i=1;i<=a && i<=b;i++){
+     if(a%i==0 && b%i==0)
+          GCD=i;
+}
 
