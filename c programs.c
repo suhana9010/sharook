@@ -231,3 +231,18 @@ for(int i=1;i<=a && i<=b;i++){
           GCD=i;
 }
 
+Print the following pyramid
+*
+* *
+* * *
+* * * *
+* * * * *
+
+int n;
+scanf("%d",&n);
+for(int i=1;i<=n;i++){
+    for(int j=1;j<=i;j++){
+          printf("*");
+      }
+    printf("\n");
+}
