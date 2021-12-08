@@ -213,4 +213,13 @@ for(int i=n;i>=1;i--){
 }
 if(even==odd) printf("it is divisible by 11");
 else printf("it is not");
-    
+
+Multiplication Table
+
+int n;
+scanf("%d",&n);
+for(int i=0;i<999999;i++){
+    printf("%d*%d=%d\n",n,i,n*i);
+}
+
+
