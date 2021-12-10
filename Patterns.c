@@ -1,5 +1,10 @@
-#include <stdio.h>
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
 
+#include <stdio.h>
 int main(){
     int n;
     scanf("%d",&n);
@@ -43,6 +48,7 @@ A B C
 A B C D 
 A B C D E 
 A B C D E F 
+
 #include <stdio.h>
 int main() {
    int n;
